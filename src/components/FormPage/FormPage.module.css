@@ -1,0 +1,90 @@
+.mainContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form {
+  width: 100%;
+  max-width: 600px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInfo {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.formLabel {
+  margin-bottom: 15px;
+}
+
+.labelText {
+  font-weight: bold;
+}
+
+.inputField {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.rulesLink {
+  margin-top: 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+.formButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.inputError {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #ee3465;
+  transition: 0.3s;
+  padding-top: 6px;
+}
+
+/* Медиа-запросы */
+@media screen and (max-width: 320px) {
+  .form {
+    padding: 15px;
+  }
+
+  .formInfo {
+    font-size: 1rem;
+  }
+
+  .inputField {
+    padding: 6px;
+  }
+
+  .formButtons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .backButton,
+  .submitButton {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

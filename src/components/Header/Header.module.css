@@ -1,0 +1,125 @@
+.header {
+  width: 100%;
+  background-color: rgba(21, 23, 25, 1);
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.header__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+
+.link {
+  width: 100%;
+  border: none;
+  padding: 0;
+  text-align: start;
+}
+
+.header__logo {
+  margin-left: 25px;
+  background-color: inherit;
+  max-width: 89px;
+  max-height: 24px;
+}
+
+.header__info {
+  display: flex;
+  align-items: center;
+}
+
+.header__input {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.5);
+  padding-left: 44px;
+}
+
+.header__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18.78px;
+}
+
+.header__search {
+  width: 446px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__loupe {
+  position: absolute;
+  left: 10px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header__arrow {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+
+.header__text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16.44px;
+  color: rgba(255, 255, 255, 1);
+  margin: 0;
+  margin-top: 0;
+  padding: 0;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.header__text_type_signin {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 10px 20px 10px 20px;
+  border-radius: 6px;
+  border: none;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17.07px;
+}
+
+.header__button {
+  background-image: url('../../images/menu.svg');
+  width: 30px;
+  height: 30px;
+  background-color: inherit;
+  border: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__button_disabled {
+  display: none;
+}
+
+.header__info_disabled {
+  display: none;
+}
