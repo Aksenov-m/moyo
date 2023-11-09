@@ -1,56 +1,68 @@
 .mainContent {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: start;
   align-items: center;
   height: 100vh;
+  margin-top: 162px;
+}
+
+.formLogo {
+  margin-bottom: 50px;
 }
 
 .form {
   width: 100%;
-  max-width: 600px;
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 368px;
+  margin: 0;
+  padding: 0;
 }
 
 .formContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.formInfo {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-
 .formLabel {
-  margin-bottom: 15px;
-}
-
-.labelText {
-  font-weight: bold;
+  width: 100%;
+  margin-bottom: 24px;
 }
 
 .inputField {
+  box-sizing: border-box;
   width: 100%;
-  padding: 8px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  padding: 0;
+  padding-left: 20px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffe;
 }
 
-.rulesLink {
-  margin-top: 10px;
-  text-decoration: none;
-  color: #007bff;
+.inputField::placeholder {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .formButtons {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 20px;
+  margin-bottom: 32px;
+}
+
+.formLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 172px;
+  margin-top: 50px;
+  margin-bottom: 123px;
 }
 
 .inputError {
@@ -64,27 +76,13 @@
 }
 
 /* Медиа-запросы */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
+  .formLogo {
+    width: 140px;
+    height: 38px;
+  }
+
   .form {
-    padding: 15px;
-  }
-
-  .formInfo {
-    font-size: 1rem;
-  }
-
-  .inputField {
-    padding: 6px;
-  }
-
-  .formButtons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .backButton,
-  .submitButton {
-    width: 100%;
-    margin-top: 10px;
+    max-width: 335px;
   }
 }

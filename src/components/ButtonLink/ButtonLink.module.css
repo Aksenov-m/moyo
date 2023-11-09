@@ -1,0 +1,9 @@
+.form__link {
+  border: none;
+  margin: 0;
+}
+
+.form__logo {
+  width: 48px;
+  height: 48px;
+}

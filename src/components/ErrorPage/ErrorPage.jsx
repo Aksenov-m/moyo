@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-// import { useHistory } from 'react-router-dom'
 import styles from './ErrorPage.module.css'
 
 const ErrorPage = () => {
@@ -11,7 +10,7 @@ const ErrorPage = () => {
         Извините, страница, которую вы ищете возможно в режиме разработки.
       </p>
       <p className={styles.link}>
-        <Link to="dimax">На главную</Link>
+        <Link to="/">На главную</Link>
       </p>
     </div>
   )
