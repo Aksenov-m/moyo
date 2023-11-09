@@ -4,6 +4,7 @@ import styles from './Header.module.css'
 import logo from '../../images/logo1.svg'
 import mapArrow from '../../images/navigation.svg'
 import loupe from '../../images/search.svg'
+import button from '../../images/button.svg'
 
 function Header() {
   return (
@@ -12,6 +13,13 @@ function Header() {
         <button className={styles.header__button}></button>
         <Link className={styles.link} to="/">
           <img className={styles.header__logo} src={logo} alt="Логотип." />
+        </Link>
+        <Link className={styles.link} to="/signin">
+          <img
+            className={styles.header__logo_type_signin}
+            src={button}
+            alt="Вход."
+          />
         </Link>
       </div>
       <div className={styles.header__search}>
