@@ -7,7 +7,7 @@ const ErrorPage = () => {
     <div className={styles.errorPage}>
       <h1 className={styles.title}>404 - Страница не найдена</h1>
       <p className={styles.description}>
-        Извините, страница, которую вы ищете возможно в режиме разработки.
+        Извините, страница, которую вы перешли возможно в режиме разработки.
       </p>
       <p className={styles.link}>
         <Link to="/">На главную</Link>

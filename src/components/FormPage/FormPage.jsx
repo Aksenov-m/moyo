@@ -42,22 +42,36 @@ const FormComponent = ({ errorMessage }) => {
                 className={styles.inputField}
               />
             </label>
+            {errors.email && (
+              <span className={styles.inputError}>{errors.email}</span>
+            )}
             <label className={styles.formLabel}>
               <input
-                value={values.name || ''}
+                value={values.password || ''}
                 onChange={handleChange}
                 required
                 placeholder="Пароль"
-                type="text"
-                name="name"
-                className={styles.inputField}
+                type="password"
+                name="password"
+                className={`${styles.inputField} ${
+                  !isValid && Object.keys(values).length > 0
+                    ? styles.inputField_type_error
+                    : ''
+                }`}
               />
             </label>
+            {errors.password && (
+              <span className={styles.inputError}>{errors.password}</span>
+            )}
           </div>
           <span className={styles.inputError}>
             {!isValid && Object.keys(values).length > 0 ? errorMessage : ''}
           </span>
-          <div className={styles.formButtons}>
+          <div
+            className={`${styles.formButtons} ${
+              errorMessage && errors.password ? styles.error : ''
+            }`}
+          >
             <Button isDisabled={!isValid} isType="submit" text="ВОЙТИ"></Button>
           </div>
         </Form>

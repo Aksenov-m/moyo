@@ -41,6 +41,10 @@
   color: #ffe;
 }
 
+.inputField_type_error {
+  border: 2px solid rgba(191, 76, 76, 1);
+}
+
 .inputField::placeholder {
   font-weight: 500;
   font-size: 16px;
@@ -67,12 +71,16 @@
 
 .inputError {
   font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 12px;
-  color: #ee3465;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17.07px;
+  color: rgba(191, 76, 76, 1);
   transition: 0.3s;
-  padding-top: 6px;
+  margin-bottom: 24px;
+}
+
+.error {
+  margin-top: 24px;
 }
 
 /* Медиа-запросы */

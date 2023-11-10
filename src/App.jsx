@@ -8,7 +8,9 @@ function App() {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <PageAuth />,
+      element: (
+        <PageAuth errorMessage="Неверный email или пароль. Попробуйте ещё раз или восстановите пароль" />
+      ),
       errorElement: <ErrorPage />,
     },
   ])

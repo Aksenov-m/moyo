@@ -9,13 +9,17 @@ export default function useFormWithValidation() {
     const target = event.target;
     const name = target.name;
     const value = target.value;
-    if (name === "tel") {
-      const isValidPhoneNumber = /^\+7\(\d{3}\)\d{3}-\d{2}-\d{2}$/.test(value);
-      setErrors({ ...errors, [name]: isValidPhoneNumber ? "" : "Введите корректный номер +7(999)999-99-99" });
+    if (name === "email") {
+      const isValidEmail = /[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/.test(value);
+      setErrors({ ...errors, [name]: isValidEmail ? "" : "Введите корректную почту" });
+    }
+    if (name === "password") {
+      // Проверка минимальной длины пароля (2 символа)
+      const isValidPassword = value.length >= 2;
+      setErrors({ ...errors, [name]: isValidPassword ? "" : "Пароль должен содержать минимум 2 символа" });
     } else {
       setErrors({ ...errors, [name]: target.validationMessage });
     }
-
     setValues({ ...values, [name]: value });
     setIsValid(target.closest("form").checkValidity());
   };
