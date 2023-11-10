@@ -1,0 +1,14 @@
+.form__reference {
+  border: none;
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.form__reference_color_grey {
+  color: rgba(255, 255, 255, 0.4);
+}

@@ -1,0 +1,19 @@
+.button {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  border: none;
+  padding: 14px 0 14px 0;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.5px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.button:disabled {
+  background-color: rgba(255, 255, 255, 0.2);
+}
