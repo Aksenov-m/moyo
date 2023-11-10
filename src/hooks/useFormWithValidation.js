@@ -14,9 +14,8 @@ export default function useFormWithValidation() {
       setErrors({ ...errors, [name]: isValidEmail ? "" : "Введите корректную почту" });
     }
     if (name === "password") {
-      // Проверка минимальной длины пароля (2 символа)
-      const isValidPassword = value.length >= 2;
-      setErrors({ ...errors, [name]: isValidPassword ? "" : "Пароль должен содержать минимум 2 символа" });
+      const isValidPassword = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[$%&_#]).{8,}$/.test(value);
+      setErrors({ ...errors, [name]: isValidPassword ? "" : "Пароль должен содержать минимум 8 символов" });
     } else {
       setErrors({ ...errors, [name]: target.validationMessage });
     }
