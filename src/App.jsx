@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   const router = createBrowserRouter([
     {
-      path: '/',
+      path: '/moyo',
       element: (
         <PageAuth errorMessage="Неверный email или пароль. Попробуйте ещё раз или восстановите пароль" />
       ),

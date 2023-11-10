@@ -10,7 +10,7 @@ const ErrorPage = () => {
         Извините, страница, которую вы перешли возможно в режиме разработки.
       </p>
       <p className={styles.link}>
-        <Link to="/">На главную</Link>
+        <Link to="/moyo">На главную</Link>
       </p>
     </div>
   )
